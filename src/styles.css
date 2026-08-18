@@ -181,3 +181,58 @@ footer{
 .day-video-frame{ position:relative; padding-bottom:56.25%; height:0; overflow:hidden; border-radius:8px; }
 .day-video-frame iframe{ position:absolute; top:0; left:0; width:100%; height:100%; }
 .day-video-caption{ font-size:0.85em; margin-top:4px; color:#888; }
+
+/* Slideshow */
+.slideshow{
+  display:flex; align-items:center; gap:10px; position:relative;
+  min-height:340px;
+}
+.slide-card{
+  flex:1; position:relative;
+  background:var(--paper-card); border:1px solid var(--line); border-radius:14px;
+  padding:28px 24px 24px; min-height:320px;
+  box-shadow:0 4px 18px rgba(28,43,51,0.08);
+  animation:slide-fade 0.25s ease;
+}
+.slide-card.highlight{ border-color:var(--gold); background:var(--peak-highlight); }
+.slide-card.today{ border-color:var(--red); border-width:2px; }
+@keyframes slide-fade{
+  from{ opacity:0; transform:translateY(6px); }
+  to{ opacity:1; transform:translateY(0); }
+}
+.slide-progress{
+  position:absolute; top:18px; right:22px;
+  font-family:'JetBrains Mono', monospace; font-size:12px; color:var(--ink-soft);
+}
+.slide-dot.day-dot{
+  position:static; display:inline-flex; margin-bottom:12px;
+  width:32px; height:32px; font-size:14px;
+}
+.slide-card .day-top{ margin-bottom:10px; }
+.slide-card .day-date{ font-size:17px; }
+.slide-card .day-desc{ font-size:15.5px; }
+
+.slide-arrow{
+  flex-shrink:0; width:40px; height:40px; border-radius:50%;
+  border:1px solid var(--line); background:var(--paper-card);
+  color:var(--blue-deep); font-size:22px; line-height:1; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  transition:background 0.15s;
+}
+.slide-arrow:hover:not(:disabled){ background:var(--paper); }
+.slide-arrow:disabled{ opacity:0.3; cursor:default; }
+@media(max-width:600px){
+  .slide-arrow{ width:32px; height:32px; font-size:18px; }
+  .slide-card{ padding:22px 16px 18px; }
+}
+
+.slide-dots{
+  display:flex; justify-content:center; gap:6px; margin-top:16px; flex-wrap:wrap;
+}
+.slide-dot-btn{
+  width:8px; height:8px; border-radius:50%; border:none; padding:0;
+  background:var(--line); cursor:pointer; transition:background 0.15s, transform 0.15s;
+}
+.slide-dot-btn.active{ background:var(--blue-mid); transform:scale(1.3); }
+.slide-dot-btn:hover{ background:var(--blue-mid); }
+

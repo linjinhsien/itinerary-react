@@ -2,7 +2,7 @@ import Hero from './components/Hero.jsx'
 import PrivacyNote from './components/PrivacyNote.jsx'
 import InfoStrip from './components/InfoStrip.jsx'
 import Flights from './components/Flights.jsx'
-import DayTimeline from './components/DayTimeline.jsx'
+import DaySlideshow from './components/DaySlideshow.jsx'
 import Checklist from './components/Checklist.jsx'
 import OtherNotes from './components/OtherNotes.jsx'
 import Faq from './components/Faq.jsx'
@@ -17,7 +17,7 @@ export default function App() {
       <InfoStrip />
       <main>
         <Flights />
-        <DayTimeline />
+        <DaySlideshow />
         <Checklist />
         <OtherNotes />
         <Faq />
