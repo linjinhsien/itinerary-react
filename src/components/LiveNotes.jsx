@@ -32,6 +32,7 @@ export default function LiveNotes() {
                 dangerouslySetInnerHTML={{ __html: note.htmlAfterList }}
               />
             )}
+            {note.meals && <div className="meal-note">{note.meals}</div>}
             {note.playlists &&
               note.playlists.map((p) => (
                 <div className="meal-note" key={p.url}>
