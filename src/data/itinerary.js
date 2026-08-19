@@ -125,6 +125,7 @@ export const days = [
     date: '8/14（五）',
     hotel: 'Holiday Inn Munich City Centre',
     desc: '慕尼黑王宮參觀（專業中文導遊）、市區觀光與自由購物',
+    meals: '🍽️ 午餐：大上海飯店（China Restaurant Shanghai，Sonnenstraße 3, 80331 München，位於斯塔胡斯Stachus附近），據稱是當地歷史最悠久的中餐館（此說法待進一步核實）',
   },
   {
     num: 11,
