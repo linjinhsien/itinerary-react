@@ -100,6 +100,7 @@ export const days = [
     date: '8/12（三）',
     hotel: 'Sunstar Hotel Grindelwald',
     desc: '格林德瓦（少女峰：艾格纜車快線／登山齒軌火車／冰宮）',
+    meals: '🍽️ 晚餐：印特拉根 Bebbis Restaurant，瑞士火鍋（起司鍋、油炸鍋）、巧克力鍋',
     videos: [
       { embed: '82xyPKrg_ug', title: '少女峰纜車上升段', caption: '🎥 少女峰纜車上升段實況' },
     ],
